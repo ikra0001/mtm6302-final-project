@@ -1,3 +1,5 @@
+// 
+
 const $welcome = document.getElementById("welcome");
 const $time = document.getElementById("time");
 const $meridiem = document.getElementById("meridiem");
@@ -67,6 +69,7 @@ function toggleSettingsButton() {
 
 $settingsButton.addEventListener("click", toggleSettingsButton);
 
+// settings input on/off changes from first if 
 function changeSettings() {
     format24 = $24hour.checked;
     showSeconds = $settingSeconds.checked;
@@ -111,6 +114,7 @@ function getDayOutput(currentTime) {
     return dayOutput[dayIndex];
 }
 
+// Extra details for the more section
 function setMoreDetails(currentTime) {
     let startOfYear = new Date(currentTime.getFullYear(), 0)
 
