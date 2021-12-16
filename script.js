@@ -94,6 +94,18 @@ function getAPOD() {
 }
 getAPOD();
 
+function getWelcome(currentTime) {
+    let hours = currentTime.getHours();
+
+    if (hours >= 6 && hours <= 11) {
+        return "Welcome, and Good morning";
+    } else if (hours >= 12 && hours <= 15) {
+        return "Welcome, and Good afternoon";
+    } else {
+        return "Goodnight";
+    }
+}
+
 function toggleMenuButton() {
     $more.classList.toggle ("on")
 }
@@ -135,6 +147,7 @@ function setMoreDetails(currentTime) {
 function setTime() {
     let currentTime = new Date(Date.now());
     $time.innerHTML = getCurrentTime(currentTime);
+    $welcome.innerHTML = getWelcome(currentTime)
     setMoreDetails(currentTime);
 }
 

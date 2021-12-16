@@ -20,6 +20,10 @@ body {
     transform: translateY(100%);
 }
 
+#welcome {
+    font-size: 2.5rem;
+}
+
 #morebutton {
     position: absolute;
     color: beige;
