@@ -1,0 +1,46 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+#settingsbutton {
+    width: 50px;
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 12px;
+}
+
+
+#main{
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 3rem;
+    transform: translateY(100%);
+}
+
+#moremenu {
+    width: 80%;
+    position: fixed;
+}
+
+#more .on {
+    transform: none;
+}
+
+
+#settingsbutton {
+    position: absolute;
+    top: 2px;
+    left: 110%;
+}
+
+#settings {
+    background-color: rgb(54, 34, 23);
+    padding: 3rem;
+
+    position: absolute;
+}
+
+#settings .on {
+    transform: none;
+}

@@ -8,7 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="main">
+        <div id="main-clock">
+            <div id="welcome"></div>
+    <!-- spans for 24hours and meridiem (am/pm) -->
+            <div>
+                <span id="time"></span>
+                <span id="meridiem"></span>
+            </div>
+        </div>
+    </div>
+    <!-- settings section pop menu -->
+    <div id="settings">
+        <h2>Settings</h2>
+        <div>
+            <input id="24hour" type="checkbox"><label for="24hour">24 Hour Clock</label>
+        </div>
+
+        <div>
+            <input id="settingseconds" type="checkbox"><label for="settingseconds">Show Seconds</label>
+        </div>
+        <img id="settingsbutton" src="assets/settings.png">
+    </div>
+    <div id="moremenu">
+        <div>
+            <span class="title">DAY OF THE WEEK</span>
+            <span class="output" id="dayweek"></span>
+        </div>
+        <div>
+            <span class="title">DAY OF THE MONTH</span>
+            <span class="output" id="daymonth"></span>
+        </div>
+        <div>
+            <span class="title">DAY OF THE YEAR</span>
+            <span class="output" id="dayyear"></span>
+        </div>
+        <div>
+            <span class="title">WEEK OF THE YEAR</span>
+            <span class="output" id="weekyear"></span>
+        </div>  
+        <button id="morebutton">More</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
