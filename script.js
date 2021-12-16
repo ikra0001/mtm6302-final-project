@@ -123,15 +123,15 @@ function setMoreDetails(currentTime) {
     let daysThisMonth = msFromStartMonth / 1000 / 60 / 60 / 24;
 
     $dayWeek.innerHTML = getDayOutput(currentTime);
-    $dayMonth.innerHTML = Math.floor(daysThisMonth);
-    $dayYear.innerHTML = Math.floor(days);
-    $weekYear.innerHTML = Math.floor(weeks); //wrong number
+    $dayMonth.innerHTML = Math.floor(daysThisMonth)+1;
+    $dayYear.innerHTML = Math.floor(days)+1;
+    $weekYear.innerHTML = Math.floor(weeks)+1; 
 }
 
 function setTime() {
     let currentTime = new Date(Date.now());
     $time.innerHTML = getCurrentTime(currentTime);
-    (currentTime);
+    setMoreDetails(currentTime);
 }
 
 setInterval(setTime, 1000);

@@ -1,6 +1,8 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #settingsbutton {
@@ -18,12 +20,49 @@ body {
     transform: translateY(100%);
 }
 
-#moremenu {
-    width: 80%;
-    position: fixed;
+#morebutton {
+    position: absolute;
+    color: beige;
+    border-radius: 3px;
+    border: 2px solid rgb(0, 185, 241);
+    font-size: 1rem;
+    background-color: rgb(54, 34, 23);
+    padding-right: 4rem;
+    padding-left: 4rem;
+    top: -30px;
+    right: 1000px;
+    z-index: 90;
 }
 
-#more .on {
+#menuOutput {
+    padding: 2rem;
+    margin-left: 5rem;
+    background-color: rgb(218, 123, 0);
+    border-radius: 6px;
+}
+
+.output {
+    margin-left: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: 3px solid rgb(0, 185, 241);
+    border-radius: 6px;
+}
+
+#moremenu {
+    width: 100%;
+    background-color: rgb(54, 34, 23);
+    position: fixed;
+    padding: 3rem;
+    z-index: 100;
+    bottom: 0;
+    right: 100;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    display: flex;
+}
+
+#moremenu.on {
     transform: none;
 }
 
@@ -37,10 +76,31 @@ body {
 #settings {
     background-color: rgb(54, 34, 23);
     padding: 3rem;
-
-    position: absolute;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    transform: translate(-110%);
+    transition: transform 0.3s;
 }
 
-#settings .on {
+.selection {
+    margin: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: rgb(218, 123, 0);
+    border: 3px solid rgb(0, 185, 241);
+    border-radius: 6px;
+}
+
+#settings.on {
     transform: none;
+}
+
+input {
+    margin-left: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: 3px solid rgb(0, 185, 241);
+    border-radius: 6px;
 }
